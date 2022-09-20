@@ -2,6 +2,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 const plugin = require('tailwindcss/plugin');
 const whoJunkiesBg = 'assets/images/BrickCutThree-4.jpg';
+const choseJunkiesBg = 'assets/images/BrickWallCutRepeatWithoutStone.jpg';
 
 module.exports = {
   content: [
@@ -21,18 +22,22 @@ module.exports = {
       },
       colors: {
         'regal-blue': '#243c5a',
+        'theme-red': '#FF0000'
       },
       backgroundColor: {
         'neutral-250': '#D9D9D9',
+        'theme-red': '#FF0000'
       },
       backgroundImage: {
         'who-junkies-section-pattern': `url("${whoJunkiesBg}")`,
+        'chose-junkies-section-pattern': `url("${choseJunkiesBg}")`,
         'gradient-black-63': 'linear-gradient(180deg, rgba(0, 0, 0, 0.63) 36.98%, rgba(0, 0, 0, 0) 100%);',
         'gradient-black-75': 'linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75))',
       },
       spacing: {
         '5.5': '1.375rem',
-        '25' : '6.25rem',
+        '18': '4.375rem',
+        '25': '6.25rem',
         '36.5': '9.125rem',
         '90px': '90px',
         '311': '19.4375rem',
@@ -46,7 +51,7 @@ module.exports = {
       'xl': '1.25rem',
       '2xl': '1.5rem',
       '3xl': '1.875rem',
-      '3.5xl': '2rem',
+      '3_5xl': '2rem',
       '4xl': '2.25rem',
       '5xl': '3rem',
       '6xl': '3.75rem',
@@ -61,6 +66,7 @@ module.exports = {
         'h1': { fontSize: theme('fontSize.2xl') },
         'h2': { fontSize: theme('fontSize.5xl') },
         'h3': { fontSize: theme('fontSize.lg') },
+        'h4': { fontSize: theme('fontSize.3_5xl') }
       })
     })
   ]
