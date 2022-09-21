@@ -3,6 +3,7 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 const plugin = require('tailwindcss/plugin');
 const whoJunkiesBg = 'assets/images/BrickCutThree-4.jpg';
 const choseJunkiesBg = 'assets/images/BrickWallCutRepeatWithoutStone.jpg';
+// const rectangleBg = 'assets/images/Rectangle.jpg';
 
 module.exports = {
   content: [
@@ -22,22 +23,28 @@ module.exports = {
       },
       colors: {
         'regal-blue': '#243c5a',
-        'theme-red': '#FF0000'
+        'theme-red': '#FF0000',
+        'text': '0px 4px 4px rgba(0, 0, 0, 0.25)'
       },
       backgroundColor: {
         'neutral-250': '#D9D9D9',
-        'theme-red': '#FF0000'
+        'theme-red': '#FF0000',
+        'design-purple': '#DC6060',
       },
       backgroundImage: {
         'who-junkies-section-pattern': `url("${whoJunkiesBg}")`,
         'chose-junkies-section-pattern': `url("${choseJunkiesBg}")`,
-        'gradient-black-63': 'linear-gradient(180deg, rgba(0, 0, 0, 0.63) 36.98%, rgba(0, 0, 0, 0) 100%);',
+        // 'rectangle-bg': `url("${rectangleBg}")`,
+        'gradient-black-63': 'linear-gradient(180deg, rgba(0, 0, 0, 0.63) 36.98%, rgba(0, 0, 0, 0) 100%)',
         'gradient-black-75': 'linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75))',
+        'gradient-purple-75': 'linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75))',
+        'gradient-gray-2': 'linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))'
       },
       spacing: {
         '5.5': '1.375rem',
         '18': '4.375rem',
         '25': '6.25rem',
+        '30': '7.5rem',
         '36.5': '9.125rem',
         '90px': '90px',
         '311': '19.4375rem',
