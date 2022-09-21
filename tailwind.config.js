@@ -48,6 +48,12 @@ module.exports = {
         '36.5': '9.125rem',
         '90px': '90px',
         '311': '19.4375rem',
+      },
+      scale: {
+        '121': '1.21',
+      },
+      blur: {
+        xs: '2.5px',
       }
     },
     fontSize: {
