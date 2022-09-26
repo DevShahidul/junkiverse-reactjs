@@ -4,6 +4,7 @@ const plugin = require('tailwindcss/plugin');
 const whoJunkiesBg = 'assets/images/BrickCutThree-4.jpg';
 const choseJunkiesBg = 'assets/images/BrickWallCutRepeatWithoutStone.jpg';
 const roadMapBg = 'assets/images/JunkiverseRustysFinal.jpg';
+const paperSectionBg = 'assets/images/paper-section-bg.png';
 // const rectangleBg = 'assets/images/Rectangle.jpg';
 
 module.exports = {
@@ -46,6 +47,7 @@ module.exports = {
         'who-junkies-section-pattern': `url("${whoJunkiesBg}")`,
         'chose-junkies-section-pattern': `url("${choseJunkiesBg}")`,
         'road-map': `url("${roadMapBg}")`,
+        'paper-section': `url("${paperSectionBg}")`,
         'gradient-black-63': 'linear-gradient(180deg, rgba(0, 0, 0, 0.63) 36.98%, rgba(0, 0, 0, 0) 100%)',
         'gradient-black-75': 'linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75))',
         'gradient-purple-75': 'linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75))',
