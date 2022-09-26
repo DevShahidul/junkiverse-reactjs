@@ -3,6 +3,7 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 const plugin = require('tailwindcss/plugin');
 const whoJunkiesBg = 'assets/images/BrickCutThree-4.jpg';
 const choseJunkiesBg = 'assets/images/BrickWallCutRepeatWithoutStone.jpg';
+const roadMapBg = 'assets/images/JunkiverseRustysFinal.jpg';
 // const rectangleBg = 'assets/images/Rectangle.jpg';
 
 module.exports = {
@@ -11,7 +12,13 @@ module.exports = {
     "./public/index.html",
   ],
   theme: {
+    borderWidth: {
+      '5': '5px',
+    },
     extend: {
+      lineHeight: {
+        '12': '2.75rem',
+      },
       fontFamily: {
         sans: [
           'Aubrey',
@@ -22,19 +29,23 @@ module.exports = {
         ]
       },
       colors: {
+        'theme-gray': '#9E9C9C',
         'regal-blue': '#243c5a',
         'theme-red': '#FF0000',
-        'text': '0px 4px 4px rgba(0, 0, 0, 0.25)'
+        'text': '0px 4px 4px rgba(0, 0, 0, 0.25)',
+        'item-heading-border': '#656565',
+        'light-text': '#B1B1B1'
       },
       backgroundColor: {
         'neutral-250': '#D9D9D9',
         'theme-red': '#FF0000',
         'design-purple': '#DC6060',
+        'black-50': 'rgba(0, 0, 0, 0.5)'
       },
       backgroundImage: {
         'who-junkies-section-pattern': `url("${whoJunkiesBg}")`,
         'chose-junkies-section-pattern': `url("${choseJunkiesBg}")`,
-        // 'rectangle-bg': `url("${rectangleBg}")`,
+        'road-map': `url("${roadMapBg}")`,
         'gradient-black-63': 'linear-gradient(180deg, rgba(0, 0, 0, 0.63) 36.98%, rgba(0, 0, 0, 0) 100%)',
         'gradient-black-75': 'linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75))',
         'gradient-purple-75': 'linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75))',
@@ -43,11 +54,15 @@ module.exports = {
       spacing: {
         '5.5': '1.375rem',
         '18': '4.375rem',
+        '19': '4.5rem',
         '25': '6.25rem',
         '30': '7.5rem',
         '36.5': '9.125rem',
         '90px': '90px',
         '311': '19.4375rem',
+      },
+      padding: {
+        'screen': '100vh'
       },
       scale: {
         '121': '1.21',
@@ -68,6 +83,7 @@ module.exports = {
       '4xl': '2.25rem',
       '5xl': '3rem',
       '6xl': '3.75rem',
+      '6.5xl': '4rem',
       '7xl': '4.5rem',
       '8xl': '6rem',
       '9xl': '8rem'
@@ -76,9 +92,9 @@ module.exports = {
   plugins: [
     plugin(function({ addBase, theme }) {
       addBase({
-        'h1': { fontSize: theme('fontSize.2xl') },
+        'h1': { fontSize: theme('fontSize.8xl') },
         'h2': { fontSize: theme('fontSize.5xl') },
-        'h3': { fontSize: theme('fontSize.lg') },
+        'h3': { fontSize: theme('fontSize.4xl') },
         'h4': { fontSize: theme('fontSize.3_5xl') }
       })
     })
