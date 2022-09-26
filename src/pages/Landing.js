@@ -1,12 +1,7 @@
 import React from 'react'
-import HeaderLanding from '../conmponents/HeaderLanding'
+import { HeaderLanding } from '../conmponents'
 import { PhasesItems } from '../data/RoadMapContents'
-import BlankSection from '../Layouts/BlankSection'
-import ChooseJunkie from '../Layouts/ChooseJunkie'
-import HeroSection from '../Layouts/HeroSection'
-import ItemsSection from '../Layouts/ItemsSection'
-import RoadmapSection from '../Layouts/RoadmapSection'
-import WhoJunkiesSection from '../Layouts/WhoJunkiesSection'
+import { BlankSection, ChooseJunkie, HeroSection, ItemsSection, RoadmapSection, WhoJunkiesSection } from '../Layouts'
 
 const Landing = () => {
   return (
