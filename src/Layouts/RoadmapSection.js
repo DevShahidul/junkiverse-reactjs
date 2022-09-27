@@ -11,7 +11,7 @@ const RoadmapSection = ({ phasesItems }) => {
         {phasesItems.map((item, index) => {
           const modulasRes = index % 2;
           return (
-            <div className={`mt-12 ${modulasRes !== 0 ? 'ml-auto' : 'ml-auto xl:ml-0'} mr-auto xl:mr-0 w-full max-w-[895px]`} key={index}>
+            <div className={`mt-12 ${modulasRes !== 0 ? 'ml-auto' : 'ml-auto xl:ml-0'} mr-auto xl:mr-0 w-full max-w-[895px]`} key={item.title + '-' + index}>
               <h2 className="text-5xl xl:text-6.5xl text-center">{item.title}</h2>
               <h3 className="mt-5 xl:mt-9 text-center text-3xl xl:text-4xl">{item.subTitle}</h3>
               <div className="text-center">
@@ -23,11 +23,11 @@ const RoadmapSection = ({ phasesItems }) => {
                   {item.options.map((option, i) => {
                     const { listItems, contents } = option;
                     return (
-                      <>
-                        <h3 className="mt-20 pb-3 text-3xl xl:text-4xl max-w-[740px] text-center mx-auto border border-b-5 border-t-0 md:border-r-black md:border-l-black border-b-item-heading-border md:rounded-br-[100px]  md:rounded-bl-[100px] md:px-12" key={option.title + '-heading-' + i}>{option.title}</h3>
-                        {listItems && <ListItems key={option.title + '-item-' + i} items={listItems} ulClass="mt-10 list-disc p-[revert]" classes="text-2xl text-light-text leading-12" />}
-                        {contents && <Contents key={option.title + '-content-' + i} items={contents} classes="text-2xl text-light-text leading-12" />}
-                      </>
+                      <div key={option.title + '-heading-' + i}>
+                        <h3 className="mt-20 pb-3 text-3xl xl:text-4xl max-w-[740px] text-center mx-auto border border-b-5 border-t-0 md:border-r-black md:border-l-black border-b-item-heading-border md:rounded-br-[100px]  md:rounded-bl-[100px] md:px-12">{option.title}</h3>
+                        {listItems && <ListItems items={listItems} ulClass="mt-10 list-disc p-[revert]" classes="text-2xl text-light-text leading-12" />}
+                        {contents && <Contents items={contents} classes="text-2xl text-light-text leading-12" />}
+                      </div>
                     )
                   })}
                 </div>
