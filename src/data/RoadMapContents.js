@@ -1,5 +1,5 @@
 import phaseImg from '../assets/images/JunkScrap.png'
-export const PhasesItems = [
+const PhasesItems = [
     {
         title: "Phase one",
         subTitle: "Scrapping Junk",
@@ -60,7 +60,7 @@ export const PhasesItems = [
         options: [
             {
                 title: "Fight Your Heart Out",
-                listItems: ["PVP is fully implemented into the Junkiverse", "Team Deathmatch","Capture the Flag", "Free for All", "Battle Royale"]
+                listItems: ["PVP is fully implemented into the Junkiverse", "Team Deathmatch", "Capture the Flag", "Free for All", "Battle Royale"]
             },
             {
                 title: "Scrap Car Drag Racing",
@@ -88,3 +88,5 @@ export const PhasesItems = [
         ]
     },
 ]
+
+export default PhasesItems;
