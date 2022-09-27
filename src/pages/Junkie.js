@@ -72,7 +72,7 @@ const Junkie = () => {
       <JunkieProfile />
       <div className="mt-12 px-4 md:px-8 xl:px-14 2xl:px-24 pb-8 md:pb-14 xl:pb-30 2xl:pb-72">
         <JunkieNav items={navItems} />
-        <div className="relative sm:mx-4 md:mx-8 xl:mx-14 2xl:mx-24 grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 md:gap-8 xl:gap-14 z-[1] -mt-9 pt-16 pb-12 px-20 rounded-50 shadow-inset-active bg-avatar-black">
+        <div className="relative sm:mx-4 md:mx-8 xl:mx-14 2xl:mx-24 grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-8 xl:gap-14 z-[1] mt-8 md:-mt-9 pt-16 pb-12 px-10 lg:px-20 rounded-50 shadow-inset-active bg-avatar-black">
           {junkieItems.map((item, index) => <JunkieItem key={item.title + index} item={item} /> )}
         </div>
       </div>

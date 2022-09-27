@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const JunkieItem = ({classes, item}) => {
   return (
@@ -9,4 +9,4 @@ const JunkieItem = ({classes, item}) => {
   )
 }
 
-export default JunkieItem
+export default JunkieItem;
