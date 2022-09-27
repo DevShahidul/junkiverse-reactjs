@@ -9,7 +9,7 @@ const WhoJunkiesSection = () => {
             <div className='space-y-24 text-center px-7'>
                 <h2>Who are the Junkies?</h2>
                 <p className='text-2xl pb-16'>10,000 Junkies. Dwellers of the Undercity. Scrap hunters, gathers fishers botanists fighters engineers bosses builders scapers big fishers small fishes</p>
-                <Button link="#" classes='justify-center' text="Become a Junkie"/>
+                <Button link="/Junkie" classes='bg-neutral-250 text-3_5xl text-black inline-flex items-center justify-center py-1.5 px-5.5' text="Become a Junkie"/>
             </div>
             <div className='flex justify-center items-center'>
                 <img src={whoJunkiesFigure} alt='Who are the Junkies?' className='w-full' />

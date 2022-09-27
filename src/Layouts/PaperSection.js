@@ -5,7 +5,7 @@ import paperTwo from '../assets/images/PaperTwo.png';
 
 const PaperSection = () => {
   return (
-    <div className="py-24 px-16 bg-paper-section">
+    <div className="pt-24 pb-80 px-16 bg-paper-section">
         <div className="flex items-center justify-center space-x-16">
             <div className="flex items-center justify-center">
                 <img src={paperGreen} alt="Paper" />

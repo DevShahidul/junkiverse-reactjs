@@ -16,7 +16,19 @@ module.exports = {
     borderWidth: {
       '5': '5px',
     },
+    borderRadius: {
+      '14': '14px',
+      '25': '25px',
+      '50': '50px',
+      '100': '100px',
+    },
     extend: {
+      boxShadow: {
+        'junkie-header': '0px 4px 4px rgba(0, 0, 0, 0.25)',
+        'inset': 'inset -5px 5px 10px #1E2225, inset 1px -1px 15px #444C55',
+        'inset-3': 'inset -3px 3px 15px #1E2023, inset 3px -3px 5px #2E3235',
+        'inset-active': '-6px 6px 15px #0F1012, 6px -6px 15px #3D4246',
+      },
       lineHeight: {
         '12': '2.75rem',
       },
@@ -41,7 +53,10 @@ module.exports = {
         'neutral-250': '#D9D9D9',
         'theme-red': '#FF0000',
         'design-purple': '#DC6060',
-        'black-50': 'rgba(0, 0, 0, 0.5)'
+        'black-50': 'rgba(0, 0, 0, 0.5)',
+        'junkie-body': '#282B2F',
+        'junkie-black': '#31373D',
+        'avatar-black': '#26292C'
       },
       backgroundImage: {
         'who-junkies-section-pattern': `url("${whoJunkiesBg}")`,

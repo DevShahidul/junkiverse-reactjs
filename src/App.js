@@ -1,7 +1,7 @@
 import {
   BrowserRouter, Route, Routes
 } from "react-router-dom";
-import { Landing } from "./pages";
+import { Junkie, Landing } from "./pages";
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
         <Routes>
           <Route path="/">
             <Route index element={<Landing />} />
+            <Route path="/junkie" element={<Junkie />} />
           </Route>
         </Routes>
       </BrowserRouter>
