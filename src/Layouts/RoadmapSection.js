@@ -2,18 +2,18 @@ import React from 'react';
 import { Contents, ListItems } from '../conmponents';
 const RoadmapSection = ({ phasesItems }) => {
   return (
-    <div className="relative z-[1] bg-road-map bg-repeat-y text-white min-h-[4644px] pt-24 pb-screen before:content-[''] before:absolute before:left-0 before:top-0 before:bg-gradient-black-63 before:w-full before:h-1/2 before:z-[-1] after:content-[''] after:absolute after:left-0 after:bottom-0 after:bg-gradient-black-63 after:w-full after:h-1/2 after:rotate-180 after:z-[-1]">
+    <div className="relative z-[1] bg-road-map bg-repeat-y text-white pt-24 pb-40 md:pb-80 xl:pb-screen before:content-[''] before:absolute before:left-0 before:top-0 before:bg-gradient-black-63 before:w-full before:h-1/2 before:z-[-1] after:content-[''] after:absolute after:left-0 after:bottom-0 after:bg-gradient-black-63 after:w-full after:h-1/2 after:rotate-180 after:z-[-1]">
       <div className="text-center">
-        <h1>Roadmap</h1>
-        <h2 className="text-theme-gray underline drop-shadow shadow-text">Season One</h2>
+        <h1 className="text-6xl xl:text-8xl">Roadmap</h1>
+        <h2 className="text-theme-gray underline drop-shadow shadow-text text-4xl xl:text-5xl">Season One</h2>
       </div>
-      <div className="flex flex-col px-16 mt-60">
+      <div className="flex flex-col px-6 md:px-16 md:mt-5 lg:mt-30 2xl:mt-60">
         {phasesItems.map((item, index) => {
           const modulasRes = index % 2;
           return (
-            <div className={`mt-12 ${modulasRes !== 0 && 'ml-auto'} max-w-[895px]`} key={index}>
-              <h2 className="text-6.5xl text-center">{item.title}</h2>
-              <h3 className="mt-9 text-center">{item.subTitle}</h3>
+            <div className={`mt-12 ${modulasRes !== 0 ? 'ml-auto' : 'ml-auto xl:ml-0'} mr-auto xl:mr-0 w-full max-w-[895px]`} key={index}>
+              <h2 className="text-5xl xl:text-6.5xl text-center">{item.title}</h2>
+              <h3 className="mt-5 xl:mt-9 text-center text-3xl xl:text-4xl">{item.subTitle}</h3>
               <div className="text-center">
                 <img src={item.thumb} alt={item.title} className="inline-block" />
               </div>
@@ -24,7 +24,7 @@ const RoadmapSection = ({ phasesItems }) => {
                     const { listItems, contents } = option;
                     return (
                       <>
-                        <h3 className="mt-20 pb-3 max-w-[740px] text-center mx-auto border border-b-5 border-t-0 border-r-black border-l-black border-b-item-heading-border rounded-br-[100px]  rounded-bl-[100px]" key={option.title + '-heading-' + i}>{option.title}</h3>
+                        <h3 className="mt-20 pb-3 text-3xl xl:text-4xl max-w-[740px] text-center mx-auto border border-b-5 border-t-0 md:border-r-black md:border-l-black border-b-item-heading-border md:rounded-br-[100px]  md:rounded-bl-[100px] md:px-12" key={option.title + '-heading-' + i}>{option.title}</h3>
                         {listItems && <ListItems key={option.title + '-item-' + i} items={listItems} ulClass="mt-10 list-disc p-[revert]" classes="text-2xl text-light-text leading-12" />}
                         {contents && <Contents key={option.title + '-content-' + i} items={contents} classes="text-2xl text-light-text leading-12" />}
                       </>

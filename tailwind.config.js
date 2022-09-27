@@ -17,10 +17,17 @@ module.exports = {
       '5': '5px',
     },
     borderRadius: {
+      'md': '0.375rem',
+      'lg': '0.5rem',
+      'xl': '0.75rem',
+      '2xl': '1rem',
+      '3xl': '1.5rem',
       '14': '14px',
       '25': '25px',
       '50': '50px',
       '100': '100px',
+      'full': '9999px',
+      DEFAULT: '0.25rem'
     },
     extend: {
       boxShadow: {
@@ -111,7 +118,7 @@ module.exports = {
     }
   },
   plugins: [
-    plugin(function({ addBase, theme }) {
+    plugin(function ({ addBase, theme }) {
       addBase({
         'h1': { fontSize: theme('fontSize.8xl') },
         'h2': { fontSize: theme('fontSize.5xl') },
