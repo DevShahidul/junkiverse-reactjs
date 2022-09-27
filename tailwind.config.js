@@ -27,6 +27,7 @@ module.exports = {
         'junkie-header': '0px 4px 4px rgba(0, 0, 0, 0.25)',
         'inset': 'inset -5px 5px 10px #1E2225, inset 1px -1px 15px #444C55',
         'inset-3': 'inset -3px 3px 15px #1E2023, inset 3px -3px 5px #2E3235',
+        'inset-7': 'inset -7px 7px 14px #191B1D, inset 7px -7px 14px #33373B',
         'inset-active': '-6px 6px 15px #0F1012, 6px -6px 15px #3D4246',
       },
       lineHeight: {
@@ -70,6 +71,7 @@ module.exports = {
       },
       spacing: {
         '5.5': '1.375rem',
+        '15': '3.75rem',
         '18': '4.375rem',
         '19': '4.5rem',
         '25': '6.25rem',
